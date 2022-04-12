@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// header section for header , logo 
+
+.header {
+  position: sticky;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  padding: 0 0.7em;
+  background-color: black;
+  z-index: 1;
+  top: 0;
+ 
+  
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 8;
+}
+
+.header__menu {
+  flex: 1;
+}
+
+.header__search {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__logo img {
+  width: 20%;
+}
+
+// end of header section and log 
+
+
+// mobile navigator css styling 
+
+main {
+  position: relative;
+ height: 85vh;
+
+}
+
+#leftMenu {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 100000000;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0;
+  border: 1px solid black;
+  overflow-y: hidden; 
+  overflow-x: hidden; 
+}
+
+#leftMenu a {
+  text-decoration: none;
+   font-size: 25px;
+   color: #fff;
+ 
+}
+
+ #leftMenu a:hover {
+  color: #fff;
+  background: #f6ba09;
+}
+#leftMenu .btn-area {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 40px;
+}
+
+span {
+  font-size: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.menu__nav {
+  height: 10vh;
+  background-color: black;
+  position: relative;
+  
+}
+.menu__nav::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 80px;
+  
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid white;
+  bottom: 50%;
+  left: 20%;
+  border-radius: 50%;
+  transform: translate(-50%, 90%);
+}
+
+.menu__container{
+  width: inherit;
+  overflow-y: hidden; 
+  overflow-x: hidden; 
+  height: 90vh;
+  background-color: white;
+  z-index: 100000;
+  
+ 
+  
+}
+
+.log{
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.menu-wrap{
+  
+  height: 80% !important;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.user-name{
+  display: flex;
+  align-items: center;
+  padding: 10px 9px;
+}
+
+.user-name:hover{
+  transition: 0.5s;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to left, #72c1e4, #041c27);
+  cursor: pointer;
+
+}
+.user-name h3{
+  flex: 3;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 500;
+  
+}
+.user-name .ar{
+  flex: 1;
+ 
+   height: 50px !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+
+.nav-g{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  gap: 10px;
+}
+.navg{
+ 
+  height: 50px;
+  padding: 2px 3px;
+  width: 99%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navg:hover{
+  // background-color: #050404e9;
+  // backdrop-filter: blur(3px);
+ transition: 0.5s;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(to left, #72c1e4, #041c27);
+  cursor: pointer;
+}
+.navg div h3{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 400;
+}
+
+.navg div i{
+  color: #72c1e4;
+}
+
+// mobile menu navigator end css
+
+
+// starting  of big slider styling
+
+.post-slider::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  z-index: -2;
+
+}
+
+.post-slider .post-wrapper{
+  
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 12px;
+  height: 28vh;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  
+  
+}
+.post-slider .post-wrapper .post{
+  display: inline-block;
+  border-radius: 8px;
+  width: 150px;
+  height: 24vh;
+  margin: 10px 10px;
+  z-index: 1;
+}
+
+.box{
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  box-shadow: 0px 3px 7px 1px rgba(53, 52, 52, 0.247);
+}
+
+.box:hover{
+  transition: 0.5s;
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+// end of big slider styling
+
+
+// start of genere styling css
+.genre{
+ margin-top:4px ;
+ margin-left: 8px;
+  height: 10vh;
+  
+}
+.title{
+  height: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 5px;
+  padding-bottom: 4px;
+}
+
+.title h4{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+}
+
+.page-wrapper-g{
+  height: 70%;
+  overflow: hidden;
+}
+
+.post-slider-g{
+  height: 100% ;
+  width: 95%;
+  margin: auto auto;
+
+}
+
+.post-wrapper-g{
+  height: 100%; 
+}
+
+
+.post-slider-g .post-wrapper-g .post-g{
+  display: inline-block;
+  border-radius: 8px;
+  height: 40px;
+width: 150px;
+  margin: 0 10px;
+  z-index: 1;
+}
+
+.post-g{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+ 
+}
+
+.post-g:hover{
+  transition: 0.2s;
+  transform: scale(1.02);
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(53, 52, 52, 0.354);
+
+
+}
+.post-g-w{
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  width: 80%;
+  height: 100%;
+  gap: 10px;
+  color: white;
+  margin: 0 auto !important;
+}
+
+// end of genere styling css
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .header__logo img {
+    width: 50%;
+  }
+
+  .header{
+    height:8vh ;
+  }
+
+  .menu__nav{
+    height: 7vh;
+  }
+
+  .menu__nav::after {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: url(../img/images.jpeg);
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid white;
+    bottom: 50%;
+    left: 20%;
+    border-radius: 50%;
+    transform: translate(-50%, 80%);
+   
+  }
+}
